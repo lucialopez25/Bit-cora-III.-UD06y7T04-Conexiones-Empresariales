@@ -4,6 +4,7 @@
 
 ### 1. El estándar Syslog y su funcionamiento
 El sistema de registro Syslog clasifica los eventos del sistema operativo cruzando dos dimensiones principales: la "Facilidad", que indica el subsistema de origen (como `auth` para autenticación o `cron` para tareas programadas), y la "Prioridad", que determina el nivel de criticidad del evento, desde mensajes de depuración (`debug`) hasta emergencias absolutas (`emerg`):
+
 **Facility (Facilidad - El "Quién"): Es un código numérico (del 0 al 23) que identifica al subsistema que generó el evento. Esto permite enrutar los mensajes a diferentes archivos. Ejemplos comunes:**
 
 auth / authpriv (4 y 10): Eventos de autenticación y seguridad.
