@@ -3,7 +3,36 @@
 ## Fundamentos de Seguridad y Auditoría
 
 ### 1. El estándar Syslog y su funcionamiento
-El sistema de registro Syslog clasifica los eventos del sistema operativo cruzando dos dimensiones principales: la "Facilidad", que indica el subsistema de origen (como `auth` para autenticación o `cron` para tareas programadas), y la "Prioridad", que determina el nivel de criticidad del evento, desde mensajes de depuración (`debug`) hasta emergencias absolutas (`emerg`).
+El sistema de registro Syslog clasifica los eventos del sistema operativo cruzando dos dimensiones principales: la "Facilidad", que indica el subsistema de origen (como `auth` para autenticación o `cron` para tareas programadas), y la "Prioridad", que determina el nivel de criticidad del evento, desde mensajes de depuración (`debug`) hasta emergencias absolutas (`emerg`):
+**Facility (Facilidad - El "Quién"): Es un código numérico (del 0 al 23) que identifica al subsistema que generó el evento. Esto permite enrutar los mensajes a diferentes archivos. Ejemplos comunes:**
+
+auth / authpriv (4 y 10): Eventos de autenticación y seguridad.
+
+cron (9): Tareas programadas.
+
+daemon (3): Servicios en segundo plano (DNS, DHCP).
+
+kern (0): Mensajes directos del kernel de Linux.
+
+local0 a local7 (16-23): Reservados para uso personalizado.
+
+**Severity (Prioridad/Severidad - El "Qué tan grave"): Es un código (del 0 al 7) que indica la urgencia del evento.**
+
+0 emerg (Pánico: el sistema está inutilizable).
+
+1 alert (Requiere acción inmediata).
+
+2 crit (Condición crítica, como fallo de hardware).
+
+3 err (Errores no críticos).
+
+4 warning (Advertencias).
+
+5 notice (Condición normal, pero significativa).
+
+6 info (Mensajes informativos).
+
+7 debug (Información de depuración para desarrolladores).
 
 **Privacidad de los registros de autenticación:**
 Mantener permisos de lectura públicos en archivos como `/var/log/auth.log` constituye una vulnerabilidad crítica ya que este archivo registra información sensible y su exposición permite a usuarios malintencionados mapear la infraestructura, identificar usuarios legítimos e interceptar credenciales introducidas erróneamente.
