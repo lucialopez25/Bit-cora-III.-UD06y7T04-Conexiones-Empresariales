@@ -16,3 +16,5 @@ La implementación de un sistema de *Log Management* centralizado es un pilar fu
 
 A nivel legal, en el marco del Reglamento General de Protección de Datos (RGPD) en España, esta práctica garantiza la trazabilidad y la responsabilidad proactiva. En caso de un incidente de seguridad, disponer de logs centralizados, inmutables y de alta disponibilidad permite realizar una auditoría forense rápida y precisa, requisito indispensable para notificar adecuadamente la brecha de seguridad a las autoridades competentes en los plazos legales establecidos.
 
+##Referencias
+A. A. Anton, P. Csereoka, E. A. Capota y R.-D. Cioargă, "Enhancing Syslog Message Security and Reliability over Unidirectional Fiber Optics", Sensors, vol. 24, no. 20, p. 6537, oct. 2024. [En línea]. Disponible: https://www.semanticscholar.org/reader/44f5072157858d0060f20c782506ca2e8553f8c2
