@@ -18,3 +18,5 @@ A nivel legal, en el marco del Reglamento General de Protección de Datos (RGPD)
 
 ## Referencias
 A. A. Anton, P. Csereoka, E. A. Capota y R.-D. Cioargă, "Enhancing Syslog Message Security and Reliability over Unidirectional Fiber Optics", Sensors, vol. 24, no. 20, p. 6537, oct. 2024. [En línea]. Disponible: https://www.semanticscholar.org/reader/44f5072157858d0060f20c782506ca2e8553f8c2
+
+"Syslog," Wikipedia, la enciclopedia libre. [En línea]. Disponible: https://es.wikipedia.org/wiki/Syslog. [Accedido: 17-abr-2026].
